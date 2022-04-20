@@ -2,7 +2,13 @@ package com.dicoding.javafundamental.inheritance;
 
 public class Main {
     public static void main(String[] args) {
-        Mobil elantraSedan = new Mobil("Hyundai", "Merah", 2019, "Elantra", "Sedan"); //creation of car Object
-        elantraSedan.detailMoobil(); //calling method to print details
+        Mobil m1 = new Mobil("Hyundai", "Merah", 2019, "Elantra", "Sedan");
+        m1.printDetailMobil();
+
+        Motor mtr1 = new Motor("Honda", "Kuning", 2010, "CBR 150R", "Sport");
+        mtr1.printDetailMotor();
+
+        Mobil m2 = new Mobil("Honda", "Hitam", 2018, "Jazz", "Sedan");
+        m2.printDetailMobil();
     }
 }
