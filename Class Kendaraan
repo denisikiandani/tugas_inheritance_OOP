@@ -1,0 +1,26 @@
+package com.dicoding.javafundamental.inheritance;
+
+public class Kendaraan {
+    // Private Fields
+    private String produsen;
+    private String warna;
+    private int tahun;
+    private String model;
+
+
+    // Parameterized Constructor
+    public Kendaraan(String produsen, String warna, int tahun, String model) {
+        this.produsen = produsen;
+        this.warna = warna;
+        this.tahun = tahun;
+        this.model = model;
+    }
+
+    // public method to print details
+    public void detailKendaraan() {
+        System.out.println("Produsen Kendaraan: " + produsen);
+        System.out.println("Warna: " + warna);
+        System.out.println("Tahun Poduksir: " + tahun);
+        System.out.println("Model: " + model);
+    }
+}
