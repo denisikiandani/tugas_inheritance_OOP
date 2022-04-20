@@ -1,14 +1,14 @@
 package com.dicoding.javafundamental.inheritance;
 
 public class Kendaraan {
-    // Private Fields
+    //field dalam class
     private String produsen;
     private String warna;
     private int tahun;
     private String model;
 
 
-    // Parameterized Constructor
+    // Constructor
     public Kendaraan(String produsen, String warna, int tahun, String model) {
         this.produsen = produsen;
         this.warna = warna;
@@ -16,11 +16,27 @@ public class Kendaraan {
         this.model = model;
     }
 
-    // public method to print details
-    public void detailKendaraan() {
+    //prosedur untuk mencetak inputan warna
+    public void warnaKendaraan(String warna){
+        if(this.warna == "merah" || this.warna == "Merah"){
+            System.out.println("Warna Merah Seperti Bunga Mawar");
+        }else if(this.warna == "kuning" || this.warna == "Kuning"){
+            System.out.println("Warna Kuning Indah Seperti Sinar Mathari");
+        }else if(this.warna == "biru" || this.warna == "Biru"){
+            System.out.println("Warna Biru Seperti Indahnya Langit");
+        }else{
+            System.out.println("Warna Jelek!");
+        }
+
+    }
+
+    //prosedur untuk mencetak data dari kendaraan
+    public void printDetailKendaraan() {
+        System.out.println();
         System.out.println("Produsen Kendaraan: " + produsen);
         System.out.println("Warna: " + warna);
         System.out.println("Tahun Poduksir: " + tahun);
         System.out.println("Model: " + model);
+        warnaKendaraan(warna);
     }
 }
