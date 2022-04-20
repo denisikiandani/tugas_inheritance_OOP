@@ -1,0 +1,18 @@
+package com.dicoding.javafundamental.inheritance;;
+
+public class Motor extends Kendaraan{
+    //field pada kelas
+    private String jenisMotor;
+
+    //Constructor
+    public Motor(String produsen, String warna, int tahun, String model, String jenisMotor) {
+        super(produsen, warna, tahun, model);  //calling parent class constructor
+        this.jenisMotor = jenisMotor;
+    }
+
+    //Mencetak detail motor dengan sekaligus memanggik method pada super class
+    public void printDetailMotor() {
+        printDetailKendaraan();
+        System.out.println("Jenis Motor: " + jenisMotor);
+    }
+}
