@@ -1,17 +1,18 @@
 package com.dicoding.javafundamental.inheritance;
 
 public class Mobil extends Kendaraan{
-    // Private field
+    //field pada kelas
     private String jenisMobil;
 
-    // Parameterized Constructor
+    //Constructor
     public Mobil(String produsen, String warna, int tahun, String model, String jenisMobil) {
-        super(produsen, warna, tahun, model);  //calling parent class constructor
+        super(produsen, warna, tahun, model);  //memanggil constructor dari super class
         this.jenisMobil = jenisMobil;
     }
 
-    public void detailMoobil() {  //details of car
-        detailKendaraan();         //calling method from parent class
+    //Mencetak detail mobil dengan sekaligus memanggik method pada super class
+    public void printDetailMobil() {
+        printDetailKendaraan();
         System.out.println("Jenis Mobil: " + jenisMobil);
     }
 }
