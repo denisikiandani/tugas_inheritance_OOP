@@ -1,0 +1,8 @@
+package com.dicoding.javafundamental.inheritance;
+
+public class Main {
+    public static void main(String[] args) {
+        Mobil elantraSedan = new Mobil("Hyundai", "Merah", 2019, "Elantra", "Sedan"); //creation of car Object
+        elantraSedan.detailMoobil(); //calling method to print details
+    }
+}
